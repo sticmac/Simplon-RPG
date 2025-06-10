@@ -452,6 +452,7 @@ GameObject:
   - component: {fileID: 4778651421674696316}
   - component: {fileID: 1944319604416714824}
   - component: {fileID: 4358702215653361519}
+  - component: {fileID: 9029964552497737517}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -583,9 +584,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8193377958203430752}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0609caa752f68f02b0d17d65fe3bd99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movement: {fileID: 420440014608304630}
+  _attack: {fileID: 1056858500192916938}
+--- !u!114 &9029964552497737517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8193377958203430752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b7a342df5319b0e9b7517fd0053a3d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _movement: {fileID: 420440014608304630}
