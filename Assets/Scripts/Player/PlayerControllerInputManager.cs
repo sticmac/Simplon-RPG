@@ -4,6 +4,7 @@ public class PlayerControllerInputManager : MonoBehaviour
 {
     [SerializeField] private CharacterMovement _movement;
     [SerializeField] private PlayerAttack _attack;
+    [SerializeField] private CharacterJump _jump;
 
     void Update()
     {
@@ -43,5 +44,10 @@ public class PlayerControllerInputManager : MonoBehaviour
             _attack.Attack();
         }
 
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            _jump.Jump();
+        }
     }
 }

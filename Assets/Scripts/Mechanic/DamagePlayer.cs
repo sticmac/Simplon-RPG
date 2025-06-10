@@ -14,7 +14,7 @@ public class DamagePlayer : MonoBehaviour
     {
         if (_damageCoroutine == null && other.CompareTag(_playerTag))
         {
-            _damageCoroutine = StartCoroutine(DamageCoroutine());
+            _damageCoroutine = StartCoroutine(DamageCoroutine(_damage));
         }
     }
 
@@ -27,11 +27,11 @@ public class DamagePlayer : MonoBehaviour
         }
     }
 
-    private IEnumerator DamageCoroutine()
+    private IEnumerator DamageCoroutine(int damage)
     {
         while (true)
         {
-            _playerLife.TakeDamage(_damage);
+            _playerLife.TakeDamage(damage);
             yield return new WaitForSeconds(_attackInterval);
         }
     }

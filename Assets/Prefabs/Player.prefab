@@ -147,6 +147,52 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.5, y: 0.94}
   m_Direction: 0
+--- !u!1 &2942684195581094550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2111427145449622370}
+  - component: {fileID: 5869160642628498144}
+  m_Layer: 0
+  m_Name: Jump
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2111427145449622370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2942684195581094550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 487198748725585736}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5869160642628498144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2942684195581094550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4744a89e2a0feda9d45041ac9cfee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rb2D: {fileID: 7952612576318024107}
+  _jumpForce: 5
 --- !u!1 &3044576473683474471
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +440,7 @@ Transform:
   m_Children:
   - {fileID: 7491631509136049019}
   - {fileID: 2271118066587144657}
+  - {fileID: 2111427145449622370}
   m_Father: {fileID: 1110889577968829878}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8152633785707241542
@@ -591,6 +638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movement: {fileID: 420440014608304630}
   _attack: {fileID: 1056858500192916938}
+  _jump: {fileID: 5869160642628498144}
 --- !u!114 &9029964552497737517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,3 +653,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movement: {fileID: 420440014608304630}
   _attack: {fileID: 1056858500192916938}
+  _jump: {fileID: 5869160642628498144}
